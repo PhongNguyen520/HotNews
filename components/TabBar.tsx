@@ -72,11 +72,11 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
         return (
           <TabBarButton
             key={route.name}
-            onPress={onPress}
+            onPress={() => onPress}
             onLongPress={onLongPress}
             isFocused={isFocused}
             routeName={route.name}
-            label={label}
+            label={label+""}
           />
         );
       })}
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   tabbar: {
     flexDirection: 'row',
     paddingTop: 16,
-    paddingBottom:40,
+    paddingBottom: 15,
     backgroundColor: Colors.white,
   }
 })

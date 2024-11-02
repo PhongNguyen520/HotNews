@@ -41,6 +41,18 @@ const newsCategoryList = [
     slug: 'business',
     selected: false,
   },
+  {
+    id: 8,
+    title: 'Top',
+    slug: 'top',
+    selected: false,
+  },
+  {
+    id: 9,
+    title: 'Other',
+    slug: 'other',
+    selected: false,
+  },
 ];
 
 export default newsCategoryList;

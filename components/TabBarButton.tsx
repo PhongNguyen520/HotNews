@@ -41,8 +41,8 @@ const TabBarButton = ({
 
   return (
     <Pressable
-      onPress={onPress}
-      onLongPress={onLongPress}
+      onPress={onPress()}
+      onLongPress={onLongPress()}
       style={styles.tabbarBtn}
     >
       {icon[routeName]({
